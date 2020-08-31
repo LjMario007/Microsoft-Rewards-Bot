@@ -25,11 +25,11 @@ for content in root.findall(tag):
     soup = BeautifulSoup(content.text, "lxml")
     for link in soup.findAll("a"):
         url = link.get("href")
-        if url and 'http' in url and ("/aka.ms" in url or "/e.microsoft" in url):
+        if url and "http" in url and ("/aka.ms" in url or "/e.microsoft" in url):
             linkList.append(url)
 
 with open("email_links.txt", "w") as filehandle:
     for listitem in linkList:
         filehandle.write("%s\n" % listitem)
 
-print('Saved %s links from reddit' % len(linkList))
+print("Saved %s links from reddit" % len(linkList))
