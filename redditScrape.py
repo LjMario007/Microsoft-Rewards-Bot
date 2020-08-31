@@ -1,7 +1,8 @@
-from bs4 import BeautifulSoup
+import os
+
 import lxml.etree as ET
 import requests
-import os
+from bs4 import BeautifulSoup
 
 rssRedditURL = "https://www.reddit.com/r/MicrosoftRewards/search.rss?sort=new&restrict_sr=on&q=flair%3AMail%2BPoints"
 
