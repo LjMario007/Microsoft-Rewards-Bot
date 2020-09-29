@@ -961,6 +961,7 @@ def ensure_pc_mode_logged_in():
             "//*[text()='Sign in' and @aria-hidden='false']//parent::a")
     wait_until_clickable(By.XPATH, "//*[text()='Sign in']//parent::a", 15)
 
+
 def ensure_mobile_mode_logged_in():
     """
     Navigates to www.bing.com and clicks on ribbon to ensure logged in
