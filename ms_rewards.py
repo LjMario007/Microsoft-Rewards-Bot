@@ -18,15 +18,13 @@ from datetime import datetime, timedelta
 import requests
 from requests.exceptions import RequestException
 from selenium import webdriver
-from selenium.common.exceptions import (
-    WebDriverException,
-    TimeoutException,
-    ElementClickInterceptedException,
-    ElementNotVisibleException,
-    ElementNotInteractableException,
-    NoSuchElementException,
-    UnexpectedAlertPresentException,
-)
+from selenium.common.exceptions import (ElementClickInterceptedException,
+                                        ElementNotInteractableException,
+                                        ElementNotVisibleException,
+                                        NoSuchElementException,
+                                        TimeoutException,
+                                        UnexpectedAlertPresentException,
+                                        WebDriverException)
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
