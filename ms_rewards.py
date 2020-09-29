@@ -2,9 +2,7 @@
 # ms_rewards.py - Searches for results via pc bing browser and mobile, completes quizzes on pc bing browser
 # Version 1.4
 # Date: 09/22/2020
-
 # FIXME Search Queries - reduce the amount of extra searches after point cap has been reached
-
 import argparse
 import json
 import logging
@@ -13,18 +11,19 @@ import platform
 import random
 import time
 import zipfile
-from datetime import datetime, timedelta
+from datetime import datetime
+from datetime import timedelta
 
 import requests
 from requests.exceptions import RequestException
 from selenium import webdriver
-from selenium.common.exceptions import (ElementClickInterceptedException,
-                                        ElementNotInteractableException,
-                                        ElementNotVisibleException,
-                                        NoSuchElementException,
-                                        TimeoutException,
-                                        UnexpectedAlertPresentException,
-                                        WebDriverException)
+from selenium.common.exceptions import ElementClickInterceptedException
+from selenium.common.exceptions import ElementNotInteractableException
+from selenium.common.exceptions import ElementNotVisibleException
+from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import UnexpectedAlertPresentException
+from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
